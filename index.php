@@ -1,7 +1,174 @@
-<?php
-//$var = '';  
-//$array = array();
 
+*/
+
+= присваивание
+== равенство
+=== равенство по типу
+!= не равно
+!== не равно + потипу
+<> - не равно (синонимы !=)
+< - меньше
+> - больше
+<= - меньеш или равно
+>= -больше или равно 
+
+
+*/
+
+
+<?php
+
+
+$login = 'inpost';
+$pass = 'test';
+
+if ($login !='inpost' ) 
+      //Условие
+           {
+	echo 'Логин совпал';
+	//что делать если условие верно
+
+
+} elseif ( $pass != 'test') 
+         //Условие
+           {
+	echo 'Пароль совпал';
+	//что делать если условие верно
+
+
+} else {
+	echo 'Ни логин, ни пароль не совпали';
+	//что делать если условие верно
+}
+
+
+/*
+  isset($variable) (проверка на существование переменной)
+  ! - (нет)
+  !empty($variable) (пустая)
+  
+
+*/
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+$var = "tex";
+
+//имена
+{
+	$name1 = 'Вася'
+	$name2 = 'Петя'
+	$name3 = 'Илона'
+	$name4 = 'Вася'
+	$name5 = 'Даша'
+}
+
+$Страны
+{
+	$COUNRTY1 = 'Росиия'
+	$COUNRTY2 = 'Росиия'
+}
+
+// $var = '';  - Обычный текстовый тип
+// $var = array(); Создание переменных массивов
+
+// Переменные $var = int (число), string (текст), float (число с плавающей запятов, 5,3) array (массив)
+
+
+// рабочий пример массивов
+
+
+<?php
+
+
+
+
+	$var = 'tex';
+
+	$name1 = 'Вася';
+	$name2 = 'Петя';
+	$name3 = 'Илона';
+	$name4 = 'Вася';
+	$name5 = 'Даша';
+	$countru1 = 'Росиия';
+	$countru2 = 'Украина';
+
+
+
+$var = '';  //- Обычный текстовый тип
+ $var = array(); // Создание переменных массивов
+
+// Переменные $var = int (число), string (текст), float (число с плавающей запятов, 5,3) array (массив)
+
+//$var = ''; //обычная переменная 
+
+
+//$var = array(''); // переменная массива
+
+$var = 'Произвольный текст';  
+$array = array(
+	'key'=>'value',
+	'key2'=>'value2',
+	'key3'=>'value3',
+
+);
+
+$countru = array(
+	'Азия' => 'Россия',
+	'Европа' => 'Украина',
+	'Азия2' => 'Китай',
+	);
+
+	echo '<pre>'.print_r($countru,1).'</pre>';
+
+
+
+
+
+
+
+
+Массивы бывают двух типов
+
+- Индексный
+$countru = array(
+	'1' => 'Россия',
+	'2' => 'Украина',
+	'3' => 'Китай',
+так же можно без значений
+$countru = array(
+	'Россия',
+	'Украина',
+	'Китай',
+
+- Ассоциативный (может содержать хаотичные имена) echo $array['key2'];
+    'Азия' => 'Россия',
+	'Европа' => 'Украина',
+	'Азия2' => 'Китай'
+
+
+
+
+
+//Рабочий пример масива в массиве
+
+$var = 'Произвольный текст';  
+$array = array(
+	'key'=>'value',
+	'key2'=>'value2',
+	'key3'=>'value3',
+	'names'=>array('Вася','Петя','Иллона','Даша'), // массив в массиве
+);
+	echo $array['names'][1];  // не посредственно указываем на внутренний массив - Петя
+	echo '<pre>'.print_r($array,1).'</pre>'; //- выводит все массивы
+
+//Рабочий пример Приминение масива в массиве Страны и города
 
 $country = array(
 	'Россия'=>array('Москва',"Питер"),
@@ -11,24 +178,5 @@ $country = array(
 
 	echo '<pre>'.print_r($country,1).'</pre>'; //- выводит все Страны с городами
 
-47:07
 
 ?>
-
-…or create a new repository on the command line
-
-echo "# ximic" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/Ximicus/ximic.git
-git push -u origin master
-
-…or push an existing repository from the command line
-
-git remote add origin https://github.com/Ximicus/ximic.git
-git push -u origin master
-
-…or import code from another repository
-
-You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
